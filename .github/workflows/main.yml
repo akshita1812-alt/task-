@@ -1,5 +1,3 @@
-name: CI
-​
 on:
     push:
         branches: [ master ]
