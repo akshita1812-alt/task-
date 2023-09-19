@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    {{!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> --}}
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="head">
+        <div class="drop">
+          <div class="col-12 col-sm-7 col-md-5 col-lg-4">
+        <h1 CLASS="logo-name">HODLINFO</h1>
+        </div>
+        <div class="d-flex justify-content-center col-12 col-sm-12 col-md-2 col-lg-4">
+        <div class="dropdown">
+            <button type="button" aria-expanded="false" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">INR</button>
+            <ul class="dropdown-menu">
+                <li><a value="INR" class="dropdown-item">INR</a></li>
+                </ul>
+        </div>
+        <div class="dropdown">
+        <button type="button"  aria-expanded="false" class="btn btn-secondary dropdown-toggle "  data-bs-toggle="dropdown"> TRX 
+        </button>
+        <ul class="dropdown-menu">
+            <li><a value="ETH"   class="dropdown-item" href="/BTC-INR">BTC</a></li>
+            <li><a value="ETH"   class="dropdown-item" href="/ETH-INR">ETH</a></li>
+            <li><a value="USDT"   class="dropdown-item" href="/USDT-INR">USDT</a> </li>
+            <li><a value="XRP"  class="dropdown-item" href="/XRP-INR">XRP</a> </li>
+            <li><a value="TRX"   class="dropdown-item" href="/TRX-INR">TRX</a></li>
+            <li><a value="DASH"   class="dropdown-item" href="/DASH-INR">DASH</a></li>
+            <li><a value="ZEC"   class="dropdown-item" href="/ZEC-INR">ZEC</a></li>
+            <li> <a value="XEM"   class="dropdown-item" href="/XEM-INR">XEM</a></li>
+            <li><a value="IOST"   class="dropdown-item" href="/IOST-INR">IOST</a></li>
+            <li><a value="WIN"   class="dropdown-item" href="/WIN-INR">WIN</a></li>
+            <li><a value="BTT"   class="dropdown-item" href="/BTT-INR">BTT</a></li>
+            <li><a value="WRX"   class="dropdown-item" href="/WRX-INR">WRX</a> </li>   
+        </ul></div>
+        <a href="https://wazirx.com/invite/sp7pvbt6?utm_source=finstreet&utm_medium=affiliate&utm_campaign=regnow-btn"><button id="buytButton" class="btn btn-secondary">BUY ETH</button></a>
+        </div>
+        <div class="d-flex justify-content-end col-12 col-sm-12 col-md-5 col-lg-4">
+        <div class="timer">
+        <div id="timerDisplay">60</div>
+    </div>
+    <button class="telegram"><i class="fa-brands fa-telegram" ></i>Connect Telegram</button>
+    <label class="switch">
+  <input type="checkbox" checked >
+  <span class="slider round"></span>
+</label></div></div>
+
+{{!-- second line --}}
+<h2 class="line2 text-center">Best Price to Trade</h2>
+<div class="d-flex justify-content-around align-items-center third-line">
+  <div class="text-center min">
+    <div class="average-header-maintext"> 0.08%</div>
+    <div class="average-header-subHeading" id="down">5 Mins</p></div>
+    </div>
+  <div class="hour">0.53%<p id="down">1 Hour</p></div>
+  <div class="av" ><span id="av" >&#8377 25,64,033</span> <p id="down">Average TRX/INR net price including commission</p></div>
+  <div class="days">9.15%<p id="down">1 Day</p></div>
+  <div class="day">12.31%<p id="down">7 Days</p></div>
+</div>
+
+{{!-- TABLE --}}
+<div class="table-price">
+  <ul class="responsive-table">
+    <li class="tables-header">
+      <div class="col col-0">&#x23</div>
+      <div class="col col-1">Platform</div>
+      <div class="col col-2">Last Traded Price</div>
+      <div class="col col-3">Buy / Sell Price</div>
+      <div class="col col-4">Difference</div>
+      <div class="col col-5">Savings</div>
+    </li>
+
+    <li class="tables-row">
+        <div class="col col-0" data-label="&#x23">1</div>
+      <div class=" col-1" data-label="Platform">WazirX</div>
+      <div class=" col-2" data-label="Last Traded Price">₹ 110.140</div>
+      <div class=" col-3" data-label="Buy / Sell Price">₹ 86.400 / ₹ 86.500</div>
+      <div class=" col-4" data-label="Difference">-4.85 %</div>
+      <div class=" col-5" data-label="Savings">▼ ₹ 4.400</div>
+    </li>
+    <!-- Repeat the above structure for each row  -->
+    <li class="tables-row">
+         <div class="col col-0" data-label="&#x23">2</div>
+                <div class="col col-1" data-label="Platform">Bitbns</div>
+                <div class="col col-2" data-label="Last Traded Price">₹ 110.140</div>
+                <div class="col col-3" data-label="Buy / Sell Price">₹ 108.780 / ₹ 110.140</div>
+                <div class="col col-4" data-label="Difference">21.30 %</div>
+                <div class="col col-5" data-label="Savings">▲ ₹ 19.340</div>
+            </li>
+            <li class="tables-row">
+                 <div class="col col-0" data-label="&#x23">3</div>
+                <div class="col col-1" data-label="Platform">Colodax</div>
+                <div class="col col-2" data-label="Last Traded Price">₹ 84.080</div>
+                <div class="col col-3" data-label="Buy / Sell Price">₹ 84.080 / ₹ 103.090</div>
+                <div class="col col-4" data-label="Difference">-7.40 %</div>
+                <div class="col col-5" data-label="Savings">▼ ₹ 6.720</div>
+            </li>
+            <li class="tables-row">
+                 <div class="col col-0" data-label="&#x23">4</div>
+                <div class="col col-1" data-label="Platform">Zebpay</div>
+                <div class="col col-2" data-label="Last Traded Price">₹ 87.260</div>
+                <div class="col col-3" data-label="Buy / Sell Price">₹ 88.370 / ₹ 87.260</div>
+                <div class="col col-4" data-label="Difference">-3.90 %</div>
+                <div class="col col-5" data-label="Savings">▼ ₹ 3.540</div>
+            </li>
+            <li class="tables-row">
+                 <div class="col col-0" data-label="&#x23">5</div>
+                <div class="col col-1" data-label="Platform">CoinDCX</div>
+                <div class="col col-2" data-label="Last Traded Price">₹ 87.870</div>
+                <div class="col col-3" data-label="Buy / Sell Price">₹ 87.790 / ₹ 87.870</div>
+                <div class="col col-4" data-label="Difference">-3.23 %</div>
+                <div class="col col-5" data-label="Savings">▼ ₹ 2.930</div>
+            </li>
+  </ul>
+
+    </div>
+        </div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="./src/timer.js"></script>
+</body>
+</html>
